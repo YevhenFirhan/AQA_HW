@@ -1,6 +1,5 @@
-"GIT Pull" - is used to acknowledge the change that's been done to the repository you were working on. After the "pull" is done, others who are also working on this repository will see the changes you've made. 
-		Comand itself is:
-			git pull 'name_of_the_remote_reporsitory' 'name_of_the_branch_you_want_data_to_be_coppied_to'
-	Git Pull runs "git fetch"(download all with remote repository but doesn't touch the local-branch data) & "git merge".
 
-	"GIT Merge" - joins 2 or more branches few people were working on into one "new" branch, local branch data is joined with data from remote repository. Also with "git merge" we can combine few commits within 1 local repository. 
+"GIT Pull" - a command that is used to extract data from a remote repo to your local repo, data is not only extracted but also merged with your local repo data. 
+	A command itself is a combo of command "git fetch"(that downloads data from a remote repo to your local repo, but doesn't connect it with local data) and "git merge" command, that joins 2 or more brances data into 1 new branch. 
+ 	 - git pull "the name of the remote repo"
+	 - git merge "the name of the branch we want to merge in with the branch we're currently in". 
