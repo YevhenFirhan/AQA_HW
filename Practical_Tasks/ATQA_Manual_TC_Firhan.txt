@@ -1,0 +1,12 @@
+1. User enters a page and tries to open a politic news tab;
+2. User enters a page and tries to contact us via email; 
+3. User enters a page and tries to find our office location; 
+4. User enters a page and tries to find an exact piece of news; 
+5. User enters a page, got intrested by an advertisment and so tries to open it. 
+
+Test Cases for 2-nd clause:
+1. Open an internet browser;
+2. Open the next URL "https://pravda.if.ua";
+3. Open the "Contact Info" tab;
+4. Locate a section where a contact email can be found;
+5. Try to copy the recently found email. 
