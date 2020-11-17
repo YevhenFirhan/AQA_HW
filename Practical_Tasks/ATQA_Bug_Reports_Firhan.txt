@@ -1,0 +1,37 @@
+ 
+ - Name: "Ads_not_open".
+ 	- Summary: The label of the piece of news overlaps an advertisment on all tabs so user is not able to open or close an advertisment.
+ 		- Steps to reproduce: 
+			1. Open an internet browser on a PC;
+			2. Open the next URL "https://pravda.if.ua/";
+			3. Open the "Economic" news tab;
+			4. Scroll down to a moment where in the upper section of the page an ad appears; 
+			5. Try to open any of the ad; 
+	- Expected result:
+		 The selected advertisment is opened in a new browser tab; 
+	- Environment: Production.
+
+
+ - Name: "Commenter's_Email_is_not_verified". 
+ 	- Summary: Users with unexisting email can leave comment in the "Comments" section. 
+ 		- Steps to reproduce: 
+			1. Open an internet browser;
+			2. Open the next URL "https://pravda.if.ua/"
+			3. Open any piece of news, e.g. "https://pravda.if.ua/ivano-frankivsk-potrapyv-do-trijky-najdemokratychnishyh-mist-ukrayiny-promis/";
+			4. Scroll down to a "Comments" section; 
+			5. Try to leave a comment using an unexisting email; 
+	- Expected result:
+		Verification email is sent to a user's email and only once email is confirmed - comment is posted. 
+	- Environment: Production.
+
+
+ - Name: Missed_Contact_Form.
+ 	- Summary: Contact Form is missed in the contact section of the page.
+ 		- Steps to reproduce: 
+			1. Open an internet browser;
+			2. Open the next URL "https://pravda.if.ua/contact/";
+			3. Scroll down to the "Contact Us" section; 
+			4. Observe that the "Contact Form" is missed, instead a paragraph text "[contact-form-7 id=”115050″ title=”Контактна форма 1″]" appears. 
+		- Expected result:
+			Contact Form is present, user is able to populate needed contact data so news aggency is able to conact him/her. 
+	- Environment: Production.
