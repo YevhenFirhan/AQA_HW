@@ -4,9 +4,38 @@
 4. User enters a page and tries to find an exact piece of news; 
 5. User enters a page, got intrested by an advertisment and so tries to open it. 
 
-Test Cases for 2-nd clause:
+Test Case for 1-st clause:
+1. Open an internet browser;
+2. Open the next URL "https://pravda.if.ua";
+3. Open the "Politic" news tab;
+4. Ovserve a politic-related news appeared on a screen. 
+
+Test Case for 2-nd clause:
 1. Open an internet browser;
 2. Open the next URL "https://pravda.if.ua";
 3. Open the "Contact Info" tab;
 4. Locate a section where a contact email can be found;
 5. Try to copy the recently found email. 
+
+Test Case for 3-d clause:
+1. Open an internet browser;
+2. Open the next URL "https://pravda.if.ua";
+3. Open the "Contact Info" tab;
+4. Locate a section where Google Maps Widget is;
+5. Try to open a widget. 
+
+Test Case for 4-th clause:
+1. Open an internet browser;
+2. Open the next URL "https://pravda.if.ua";
+3. Press on a loop icon in the upper right corner of the screen; 
+4. Enter a text in an appeared field, press "Find"; 
+5. Ovserve appearing of some news.
+
+Test Case for 5-th clause:
+1. Open an internet browser;
+2. Open the next URL "https://pravda.if.ua";
+3. Find any ad on a screen; 
+4. Click on a chosen ad; 
+5. Observe a new tab open with a product from a recently selected ad. 
+
+
