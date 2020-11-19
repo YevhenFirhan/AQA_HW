@@ -1,0 +1,41 @@
+
+Test Case #1
+	1. Open "Google Chrome" internet browser; 
+	2. Open the next URL "https://www.amazon.com/"; 
+	3. Click on "Computers & Accessories" tab; 
+	4. Scroll down until options with goods appears; 
+	5. Click on "SAMSUNG 970 EVO Plus SSD 2TB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology (MZ-V7S2T0B/AM)";
+	6. Click on "Add to Cart". 
+
+Test Case #2 
+	1. Open "Google Chrome" internet browser; 
+	2. Open the next URL "https://www.amazon.com/"; 
+	3. Click on "Computers & Accessories" tab; 
+	4. In a "Sort by" field, change a sorting option to "Price: Low to High"
+
+Test Case #3
+	1. Open "Google Chrome" internet browser; 
+	2. Open the next URL "https://www.amazon.com/"; 
+	3. Click on "Computers & Accessories" tab; 
+	4. Scroll down to a bottom of the screen until "pagination" appears; 
+	5. Click on page "2". 
+
+Test Case #4
+	1. Open "Google Chrome" internet browser; 
+	2. Open the next URL "https://www.amazon.com/"; 
+	3. Click on "Computers & Accessories" tab; 
+	4. In the left corner of the screen in a "Refine by" filter tab, check the box "Works with Alexa"; 
+
+Test Case #5
+	1. Open "Google Chrome" internet browser; 
+	2. Open the next URL "https://www.amazon.com/"; 
+	3. In the upper left corner of the screen, click on "Hamburger" menu;  
+	4. Scroll down until "Help" option appears; 
+	5. Click on "Help" option. 
+
+
+
+
+
+
+

@@ -1,0 +1,286 @@
+{
+  "id": "819cdf6b-b558-4371-87cc-bfb7d06fe584",
+  "version": "2.0",
+  "name": "Selenium_IDE_PoC",
+  "url": "https://www.amazon.com/",
+  "tests": [{
+    "id": "482ca92f-a19b-43ca-a9c7-afbd04ce506d",
+    "name": "TC_1_Adding_to_a_card",
+    "commands": [{
+      "id": "a3a9496c-3b71-41d4-8b8c-1745c0c237c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4839200d-d728-486a-8f0e-ddeddc904ceb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80b1135a-68b6-4837-8850-7153d1d73834",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay",
+      "targets": [
+        ["css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay", "css:finder"],
+        ["xpath=//div[@id='dweqKW6GIw8JRicNm1HRMg']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/b?node=16225007011&pf_rd_r=MA960W2F5JD0M9GNCK1V&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2fb9c8a-3138-4047-9afa-8dfaaf0293fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#result_0 .a-size-base",
+      "targets": [
+        ["css=#result_0 .a-size-base", "css:finder"],
+        ["xpath=//li[@id='result_0']/div/div[3]/div/a/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'SAMSUNG 970 EVO Plus SSD 2TB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology (MZ-V7S2T0B/AM)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92c161f0-42f7-459f-8d6d-f3d52eb6a987",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c33af3-3867-414b-9744-3acdd75f5ef9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#attach-accessory-tile-1 .a-row .a-link-normal:nth-child(1)",
+      "targets": [
+        ["css=#attach-accessory-tile-1 .a-row .a-link-normal:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='attach-accessory-tile-1']/div/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/product-reviews/B07N124XDS/ref=dp_atch_dss_srp_ce_2')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "66796bf3-b3f9-4e6c-80f6-bbec8c7772c5",
+    "name": "TC_2_Sorting_filter",
+    "commands": [{
+      "id": "043d8cfc-293d-4ce2-9e7f-1206be0f60ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1127c01e-452f-446c-bf8d-5d4cbddddc7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b8c538c-d328-4db0-aaa7-10489363214c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay",
+      "targets": [
+        ["css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay", "css:finder"],
+        ["xpath=//div[@id='T-j65HpV3nwaluPXNnarUQ']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/b?node=16225007011&pf_rd_r=J1M0XN9JCM71RAD4B1ER&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfd2dd01-e735-4575-8569-8bcdcec2859e",
+      "comment": "",
+      "command": "click",
+      "target": "id=sort",
+      "targets": [
+        ["id=sort", "id"],
+        ["name=sort", "name"],
+        ["css=#sort", "css:finder"],
+        ["xpath=//select[@id='sort']", "xpath:attributes"],
+        ["xpath=//form[@id='searchSortForm']/select", "xpath:idRelative"],
+        ["xpath=//form/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c6b6b4-9e93-47f8-8d35-0bbe1aea6317",
+      "comment": "",
+      "command": "select",
+      "target": "id=sort",
+      "targets": [],
+      "value": "label=Price: Low to High"
+    }]
+  }, {
+    "id": "8bd1d97e-cf44-4db8-8908-770252d1b811",
+    "name": "TC_3_Pagination",
+    "commands": [{
+      "id": "a0152704-1293-4713-aa71-7b74bb0a2810",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0df3c113-13e4-4f03-8e49-4ea53488d22b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ad089b1-c1d8-4d32-b211-c7dccc829dac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay",
+      "targets": [
+        ["css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay", "css:finder"],
+        ["xpath=//div[@id='-6aaJOARmM2vpvqLj_VRRA']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/b?node=16225007011&pf_rd_r=6SVE9KRBG2E47CVXRCX1&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21b9ac9d-1195-4b40-a7ff-4b356c424092",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4065.333251953125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0514c612-fa5c-4f32-a115-9262a743aaa7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2",
+      "targets": [
+        ["linkText=2", "linkText"],
+        ["css=.pagnLink:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'2')])[20]", "xpath:link"],
+        ["xpath=//div[@id='pagn']/span[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/s/ref=lp_16225007011_pg_2?rh=n%3A16225007011&page=2&ie=UTF8&qid=1605779333')]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "496f33d6-b732-4e08-8971-8610129509c3",
+    "name": "TC_4_Checkbox_Goods_Filter",
+    "commands": [{
+      "id": "b5c33d93-fcfe-418a-898d-a273fd3102f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e2ddb05-9bbf-4621-8134-c1af32c7444b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06ce8433-5c14-4c02-8607-3e248a63f9d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay",
+      "targets": [
+        ["css=.grid-row-1 > .quadrant-container-0 > .quadrant-overlay", "css:finder"],
+        ["xpath=//div[@id='9XWG3o2hlWMsKkgpPa8Zww']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/b?node=16225007011&pf_rd_r=7YP963AJNMM6CDEMW5K5&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbd80d72-8bed-4949-be99-a3d3040554f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=s-ref-checkbox-16741513011",
+      "targets": [
+        ["name=s-ref-checkbox-16741513011", "name"],
+        ["css=.a-unordered-list:nth-child(6) li:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='s-ref-checkbox-16741513011']", "xpath:attributes"],
+        ["xpath=//div[@id='leftNav']/ul[2]/div/li[2]/span/span/div/label/input", "xpath:idRelative"],
+        ["xpath=//li[2]/span/span/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "580119fe-ab7c-4ef9-9180-001da2ba7e9f",
+    "name": "TC_5_Help_through_Hamburger",
+    "commands": [{
+      "id": "2764580e-ea9f-4a80-a8b0-804f48b20cad",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa11fd96-8ebd-4ce5-9f07-76a9a99d512d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8e29547-67ec-498a-85ef-952a4639324d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hm-icon",
+      "targets": [
+        ["css=.hm-icon", "css:finder"],
+        ["xpath=//a[@id='nav-hamburger-menu']/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffd6b7da-5331-4038-8026-a3e15385ba78",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=hmenu-customer-profile",
+      "targets": [
+        ["id=hmenu-customer-profile", "id"],
+        ["css=#hmenu-customer-profile", "css:finder"],
+        ["xpath=//div[@id='hmenu-customer-profile']", "xpath:attributes"],
+        ["xpath=//a[@id='hmenu-customer-profile-link']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bab89721-396e-4f7d-a851-2ca56aa47c74",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Help",
+      "targets": [
+        ["linkText=Help", "linkText"],
+        ["css=.hmenu-visible > li:nth-child(27) > .hmenu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Help')])[2]", "xpath:link"],
+        ["xpath=//div[@id='hmenu-content']/ul/li[25]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/help/customer/display.html?nodeId=508510&ref_=nav_em_cs_help_0_1_1_39')]", "xpath:href"],
+        ["xpath=//li[25]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a37d3bff-8fa6-4b84-8e3c-3d918d0aaa12",
+    "name": "Practical_Task",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["482ca92f-a19b-43ca-a9c7-afbd04ce506d", "66796bf3-b3f9-4e6c-80f6-bbec8c7772c5", "8bd1d97e-cf44-4db8-8908-770252d1b811", "496f33d6-b732-4e08-8971-8610129509c3", "580119fe-ab7c-4ef9-9180-001da2ba7e9f"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}
