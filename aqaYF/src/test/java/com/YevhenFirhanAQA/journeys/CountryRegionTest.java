@@ -34,6 +34,7 @@ public class CountryRegionTest extends BaseTest {
         //Once user ensures that his/her currency is GBP, as expected, user clicks on 'save changes' button
         homePage = homePage.navigateToCountryRegionPage().saveRegionCurrency();
         //Then homepage is opened, GB flag is displayed in the header
+        //TODO boolean should be returned from the page rather than evaluating in the test
         Assert.assertTrue(driver.findElement(By.xpath(countryRegionPage.flagGB)).isDisplayed());
     }
 
