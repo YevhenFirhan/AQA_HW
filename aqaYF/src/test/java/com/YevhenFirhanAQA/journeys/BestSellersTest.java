@@ -15,6 +15,7 @@ public class BestSellersTest extends BaseTest {
     private HomePage homePage;
     private BestSellersPage bestSellersPage;
     private FirstGoodBestSellersItemPage firstGoodBestSellersItemPage;
+    //TODO this should be declared on the page and not in the test 
     public String GoodAppeared = "//div[@id='imgTagWrapperId']";
 
     @BeforeMethod(alwaysRun = true)
@@ -37,6 +38,7 @@ public class BestSellersTest extends BaseTest {
         //And then user clicks on the first good in the screen
         firstGoodBestSellersItemPage = bestSellersPage.clickElement();
         //Then recently clicked good appears on a screen
+        //TODO corresponding page should return boolean result of the check into Assert
         Assert.assertTrue(driver.findElement(By.xpath(GoodAppeared)).isDisplayed());
     }
 
