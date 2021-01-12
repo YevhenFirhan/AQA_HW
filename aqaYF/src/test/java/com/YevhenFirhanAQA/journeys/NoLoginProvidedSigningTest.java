@@ -35,6 +35,7 @@ public class NoLoginProvidedSigningTest extends BaseTest {
         //and user clicks 'Continue' button without providing an email or phone number as 'username'
         signingInPage = signingInPage.clickContinue();
         //Then alert is presented giving the user an advise of a needed action required
+        //TODO boolean should be returned from the page rather than evaluating in the test
         Assert.assertTrue(driver.findElement(By.xpath(alertFlag)).isDisplayed());
     }
 
