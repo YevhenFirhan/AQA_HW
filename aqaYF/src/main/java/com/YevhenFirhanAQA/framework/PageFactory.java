@@ -9,7 +9,7 @@ public class PageFactory {
     public static <T extends Page>T newPage(RemoteWebDriver driver, Class<T> clazz) throws Exception {
         return getNewInstance(driver, clazz);
     }
-
+//TODO please remove redundant empty lines
 
     private static <T> T getNewInstance(RemoteWebDriver driver, Class<T> clazz) throws Exception {
         try {
