@@ -37,6 +37,7 @@ public class SearchFieldNoResultTest extends BaseTest {
         searchNoResultPage = homePage.searchForItem(SearchNoResultPage.class, searchTerm);
 
         //Then 'No results' page is presented to a user
+        //TODO boolean should be returned from the page rather than evaluating in the test
         Assert.assertTrue(driver.findElement(By.xpath(noResultsLable)).isDisplayed());
     }
 
