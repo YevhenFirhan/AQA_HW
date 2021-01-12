@@ -7,6 +7,7 @@ import  com.YevhenFirhanAQA.pages.HomePage;
 public class CountryRegionPage extends Page{
 
     private String saveChanges = "//span[@class='a-button-inner']//input[@type='submit']";
+    //TODO do we actually need this variable?
     public String flagGB = "//span[@class='icp-nav-flag icp-nav-flag-gb']";
     public CountryRegionPage(RemoteWebDriver driver) { super(driver); }
 
