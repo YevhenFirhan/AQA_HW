@@ -6,13 +6,17 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import com.YevhenFirhanAQA.pages.FirstGoodBestSellersItemPage;
 
 public class BestSellersPage extends Page {
-//TODO you can use single '' inside of locators e.g. "//*[@id='zg_left_col1']/div[1]/div[2]/div/div[2]/a/div[2]"; 
+//TODO you can use single '' inside of locators e.g. "//*[@id='zg_left_col1']/div[1]/div[2]/div/div[2]/a/div[2]";
     private String firstGoodItem = "//*[@id=\"zg_left_col1\"]/div[1]/div[2]/div/div[2]/a/div[2]";
 
     public BestSellersPage(RemoteWebDriver driver) { super(driver); }
 
-    public FirstGoodBestSellersItemPage clickElement() throws Exception {
-        return clickOnElement(By.xpath(firstGoodItem), FirstGoodBestSellersItemPage.class);
+    public String getFirstGoodItemTitle() {
+        return getElements(By.xpath(firstGoodItem)).get(0).getText();
     }
-//TODO empty line
+
+    public FirstGoodBestSellersItemPage navigateToFirstGoodBestSellersItemPage() throws Exception {
+        getElements(By.xpath(firstGoodItem)).get(0).click();
+        return PageFactory.newPage(driver, FirstGoodBestSellersItemPage.class);
+    }
 }

@@ -20,7 +20,6 @@ public class BestSellersTest extends BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setupTest() {
-        driver.get("https://www.amazon.co.uk");
 
         if (driver.findElement(By.xpath(acceptCookiesButtonLocator)).isDisplayed()) {
             driver.findElement(By.xpath(acceptCookiesButtonLocator)).click();
@@ -35,11 +34,16 @@ public class BestSellersTest extends BaseTest {
 
         //When user clicks on 'Best Sellers' link he/she is redirected to the 'Best Sellers' page
         bestSellersPage = homePage.navigateToBestSellersPage();
+
+        String expectedTitle = bestSellersPage.getFirstGoodItemTitle();
         //And then user clicks on the first good in the screen
-        firstGoodBestSellersItemPage = bestSellersPage.clickElement();
+        firstGoodBestSellersItemPage = bestSellersPage.navigateToFirstGoodBestSellersItemPage();
         //Then recently clicked good appears on a screen
+<<<<<<< HEAD
         //TODO corresponding page should return boolean result of the check into Assert
         Assert.assertTrue(driver.findElement(By.xpath(GoodAppeared)).isDisplayed());
+=======
+        Assert.assertTrue(firstGoodBestSellersItemPage.isFirstGoodItemLocatorCorrect(expectedTitle), "Title is not correct.");
+>>>>>>> 9b8d73a (Final Assignment Test)
     }
-
 }

@@ -1,5 +1,6 @@
 package com.YevhenFirhanAQA.pages;
 
+import com.YevhenFirhanAQA.framework.AllCategories;
 import com.YevhenFirhanAQA.framework.Header;
 import com.YevhenFirhanAQA.framework.PageFactory;
 import org.openqa.selenium.By;
@@ -13,6 +14,19 @@ public class HomePage extends Page {
         super(driver);
         this.header = new Header(driver);
     }
+
+    public AllCategories navigateToAllCatogories() throws Exception {
+        return header.navigateToAllCatogories();
+    }
+
+    public ElectronicsPage navigateToElectronicsPage() throws Exception {
+        return header.navigateToElectronicsPage();
+    }
+
+    public NewReleasesPage navigateToNewReleasesPage() throws Exception {
+        return header.navigateToNewReleases();
+    }
+
     public BestSellersPage navigateToBestSellersPage() throws Exception {
         return header.navigateToBestSellersPage();
     }

@@ -1,12 +1,15 @@
 package com.YevhenFirhanAQA.journeys;
 
 import com.YevhenFirhanAQA.BaseTest;
+import com.YevhenFirhanAQA.framework.SearchTermsDataProvider;
 import com.YevhenFirhanAQA.listeners.TestListener;
 import com.YevhenFirhanAQA.pages.HomePage;
 import com.YevhenFirhanAQA.pages.OspreyPage;
+import io.cucumber.java.it.Data;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -14,12 +17,10 @@ public class SearchFieldTest extends BaseTest {
 
     private HomePage homePage;
     private String acceptCookiesButtonLocator = "//input[@id='sp-cc-accept']";
-    private String searchTerm = "osprey";
     private OspreyPage ospreyPage;
 
     @BeforeMethod(alwaysRun = true)
     public void setupTest() {
-        driver.get("https://www.amazon.co.uk");
 
         if (driver.findElement(By.xpath(acceptCookiesButtonLocator)).isDisplayed()) {
             driver.findElement(By.xpath(acceptCookiesButtonLocator)).click();
@@ -27,8 +28,13 @@ public class SearchFieldTest extends BaseTest {
         homePage = new HomePage(driver);
     }
 
-    @Test(groups = "main", suiteName = "ui")
-    public void searchTest() throws Exception {
+    @DataProvider(name = "getSearchTerms")
+    public Object [] [] getSearchTerms() throws Exception {
+        return SearchTermsDataProvider.getAllSearchTerms();
+    }
+
+    @Test(groups = "main", dataProvider = "getSearchTerms")
+    public void searchTest(String searchTerm) throws Exception {
 
         //Given user opens a browser and provides a valid url
 
